@@ -131,10 +131,6 @@ textarea {
     background-clip: padding-box;
 }
 
-#search input[type="submit"] {
-    margin-top: 0;
-}
-
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="password"]:focus,
@@ -382,12 +378,8 @@ button:active {
 
 /* Sidebar */
 
-#search input[type="text"] {
+#search input[type="text"], #search input[type="submit"] {
     margin-top: 0;
-}
-
-#search input[type="submit"] {
-    margin-top: -10px;
 }
 
 .sidebox.submit a {
