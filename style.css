@@ -4,11 +4,6 @@ Body * {
     font-family: 'Open Sans', 'Droid Sans', arial !important;
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.6667;
-}
-
 a {
     color: #005CFF;
     text-decoration: none;
@@ -16,6 +11,7 @@ a {
 
 a:hover {
     color: #80aeff;
+    transition: color 200ms ease-out;
 }
 
 abbr[title] {
@@ -200,6 +196,10 @@ button:active {
     position: relative;
     width: calc(100% - 342px);
     padding: 0 16px 16px;
+}
+
+.content[role="main"] h1 {
+    text-align: center;
 }
 
 .content[role="main"]::before {
@@ -476,19 +476,22 @@ button:active {
 
 /* Submit page */
 
-.submit.content {
+.submit.content,
+.formtabs-content,
+.submit.content input[type="text"],
+.submit.content input[type="url"],
+.submit.content textarea {
+    width: 600px;
+}
+
+ul.tabmenu.formtab {
     text-align: center;
 }
 
-.formtabs-content {
-    display: inline-block;
-    width: 800px;
-}
-
-.linefield {
+.roundfield, .content.submit .info-notice, .formtabs-content {
     background: none;
+    border: none;
 }
-
 
 /* Stylesheet editing page */
 
@@ -504,7 +507,7 @@ button:active {
 
 /* Hide this */
 
-.rank,.sidebox.submit .morelink .nub,.users-online::before,.bottom,.link .linkflairlabel {
+.rank, .sidebox.submit .morelink .nub, .users-online::before, .bottom, .link .entry .title .linkflairlabel {
     display: none;
 }
 
@@ -518,23 +521,24 @@ button:active {
 
 .link .thumbnail {
     margin-top: 5px;
-    height: 51px;
+    height: 50px;
     text-align: center;
 }
 
 .link .thumbnail > img {
-    height: 51px;
+    height: 50px;
     width: auto;
 }
 
-.link.linkflair-officialnews .thumbnail::after {
+.link.linkflair-officialnews::after {
     content: "Official News";
     font-size: 10px;
     position: absolute;
-    bottom: -14px;
-    width: 100%;
+    left: 54px;
+    width: 70px;
     text-align: center;
     color: #000;
+    margin-top: -5px;
 }
 
 .link.linkflair-officialnews > .thumbnail {
