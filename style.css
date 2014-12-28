@@ -582,6 +582,17 @@ ul.tabmenu.formtab li:last-child  a {
     display: none;
 }
 
+/* RES */
+
+.link .entry {
+    transition: background 200ms ease;
+}
+
+.res .RES-keyNav-activeElement {
+    background-color: #f2f2f2 !important;
+    background: linear-gradient(to right,#fff 0%,#f2f2f2 95%,#fff 100%);
+}
+
 /* Link Flair */
 
 .linkflairlabel {
