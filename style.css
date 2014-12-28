@@ -213,7 +213,7 @@ button:active {
 }
 
 .link {
-    border-bottom: 1px solid rgba(201,201,201,0.2);
+    position: relative;
     margin: 0;
     padding: 0;
 }
