@@ -195,11 +195,7 @@ button:active {
     margin-left: 0;
     position: relative;
     width: calc(100% - 342px);
-    padding: 0 16px 16px;
-}
-
-.content[role="main"] h1 {
-    text-align: center;
+    padding: 1px 16px 0 16px;
 }
 
 .content[role="main"]::before {
@@ -212,10 +208,31 @@ button:active {
     top: 0;
 }
 
+.content[role="main"] h1 {
+    text-align: center;
+}
+
 .link {
     border-bottom: 1px solid rgba(201,201,201,0.2);
     margin: 0;
+    padding: 0;
+}
+
+.link .entry {
     padding: 16px 0;
+}
+
+.link .title {
+    font-size: 18px;
+    color: #08c;
+}
+
+.link.self .domain {
+    display: none;
+}
+
+.midcol {
+    margin: 16px 7px 5.5px 0;
 }
 
 /* Reddit links (header-bottom-right) */
@@ -230,10 +247,6 @@ button:active {
 
 #header-bottom-right a {
     color: #333;
-}
-
-.midcol {
-    margin: 5.5px 7px;
 }
 
 /* Nav Bar (header-bottom-left) */
@@ -594,8 +607,4 @@ ul.tabmenu.formtab li:last-child  a {
 .link.linkflair-officialnews > .thumbnail {
     background-image: url(%%news%%);
     background-position: 11px 1px;
-}
-
-.thing .title {
-    color: #08c;
 }
