@@ -592,3 +592,7 @@ ul.tabmenu.formtab li:last-child  a {
     background-image: url(%%news%%);
     background-position: 11px 1px;
 }
+
+.thing .title {
+    color: #08c;
+}
