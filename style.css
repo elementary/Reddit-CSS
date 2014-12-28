@@ -240,7 +240,7 @@ button:active {
 }
 
 .midcol {
-    margin: 18px 7px 5.5px 0;
+    margin: 21px 7px 5.5px 0;
 }
 
 /* Reddit links (header-bottom-right) */
@@ -251,6 +251,10 @@ button:active {
     font-size: 12px;
     background: none;
     padding: 4px 10px;
+    position: absolute;
+    top: initial !important;
+    bottom: 0 !important;
+    right: 0;
 }
 
 #header-bottom-right a {
@@ -584,13 +588,24 @@ ul.tabmenu.formtab li:last-child  a {
 
 /* RES */
 
-.link .entry {
+.res .link .entry {
     transition: background 200ms ease;
 }
 
 .res .RES-keyNav-activeElement {
     background-color: #f2f2f2 !important;
     background: linear-gradient(to right,#fff 0%,#f2f2f2 95%,#fff 100%);
+}
+
+.res #userbarToggle {
+    background: none;
+    border: none;
+    top: 0;
+}
+
+.res #header-bottom-right {
+    height: 18px;
+    padding: 4px 10px
 }
 
 /* Link Flair */
@@ -620,7 +635,7 @@ ul.tabmenu.formtab li:last-child  a {
 }
 
 .link .thumbnail {
-    margin-top: 18px;
+    margin-top: 21px;
     height: 55px;
     text-align: center;
     border-radius: 50%;
