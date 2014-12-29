@@ -395,7 +395,17 @@ button:active, .sidebox.submit a:active {
 }
 
 .link .expando-button {
-    height: 13px;
+    height: 10px;
+    width: 20px;
+}
+
+.link .expando-button.collapsed {
+    background: url(%%expando-more%%) center no-repeat !important;
+}
+
+.link .expando-button.expanded {
+    background: url(%%expando-less%%) center no-repeat !important;
+    margin-bottom: 0;
 }
 
 /* Sidebar */
