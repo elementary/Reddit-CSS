@@ -150,7 +150,7 @@ textarea:focus {
 }
 
 
-button, .fancy-toggle-button .add, .sidebox.submit a, .fancy-toggle-button .remove, .RESshortcutside, .RESDashboardToggle {
+button, .fancy-toggle-button .add, .sidebox.submit.submit-text a, .fancy-toggle-button .remove, .RESshortcutside, .RESDashboardToggle {
     background-color: transparent;
     background: linear-gradient(to bottom,
                               transparent,
@@ -414,7 +414,7 @@ button:active, .sidebox.submit a:active {
     margin-top: 0;
 }
 
-.sidebox.submit a {
+.sidebox.submit.submit-text a {
     cursor: pointer;
     display: inline-block;
     font-size: 16px;
@@ -424,9 +424,12 @@ button:active, .sidebox.submit a:active {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    background-color: #47A8E9;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
 }
 
-.sidebox.submit .morelink {
+.sidebox.submit.submit-text .morelink {
     border: none;
     background: none;
     letter-spacing: 0;
@@ -572,7 +575,7 @@ ul.tabmenu.formtab li:last-child  a {
 
 /* Hide this */
 
-.rank, .sidebox.submit .morelink .nub, .users-online::before, .bottom {
+.rank, .sidebox.submit .nub, .sidebox.submit.submit-link, .users-online::before, .bottom {
     display: none;
 }
 
