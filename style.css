@@ -449,6 +449,32 @@ button:active, .sidebox.submit a:active {
     background-size: contain;
 }
 
+.titlebox .subscribers, .titlebox .users-online {
+	font-size: 11px;
+	vertical-align: middle;
+}
+
+.titlebox .subscribers {
+	font-size: 14px;
+}
+
+.titlebox .users-online {
+	display: inline;
+}
+
+.titlebox .users-online .word {
+	display: none;
+}
+
+.titlebox .users-online .number::before {
+	content: "(";
+	margin-left: 5px;
+}
+
+.titlebox .users-online .number::after {
+	content: " here)";
+}
+
 .fancy-toggle-button .add, .fancy-toggle-button .remove, .RESshortcutside, .RESDashboardToggle {
     text-shadow: 0 1px 1px rgba(0,0,0,0.4);
     color: #fff;
