@@ -329,7 +329,7 @@ button:active, .sidebox.submit a:active {
     background: url(%%logo2%%) center no-repeat;
 }
 
-.tabmenu:not(.formtab) {
+#header-bottom-left .tabmenu {
     background: linear-gradient(#fff,#f5f5f5);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
                 inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
@@ -347,7 +347,7 @@ button:active, .sidebox.submit a:active {
     margin-top: 0;
 }
 
-.tabmenu:not(.formtab) li {
+#header-bottom-left .tabmenu li {
     display: inline-block;
     list-style: none;
     margin-right: 0;
@@ -357,7 +357,7 @@ button:active, .sidebox.submit a:active {
     border-right: 1px solid #e6e6e5;
 }
 
-.tabmenu:not(.formtab) li a {
+#header-bottom-left .tabmenu li a {
     display: inline-block;
     color: #636363;
     background: none;
@@ -366,31 +366,31 @@ button:active, .sidebox.submit a:active {
     padding: 0 15px;
 }
 
-.tabmenu:not(.formtab) li.selected {
+#header-bottom-left .tabmenu li.selected {
     background-color: #f2f2f2;
     border: none;
     border-right: 1px solid #e6e6e5;
 }
 
-.tabmenu:not(.formtab) li.selected a {
+#header-bottom-left .tabmenu li.selected a {
     color: #636363;
     border: none;
     background: none;
 }
 
-.tabmenu:not(.formtab) li a:hover {
+#header-bottom-left .tabmenu li a:hover {
     color: #000;
 }
 
-.tabmenu:not(.formtab) li:first-of-type {
+#header-bottom-left .tabmenu li:first-of-type {
     border-left: 1px solid #e6e6e5;
 }
 
-.tabmenu:not(.formtab) li:last-of-type {
+#header-bottom-left .tabmenu li:last-of-type {
     border-right: 0;
 }
 
-.tabmenu:not(.formtab) li:last-of-type a {
+#header-bottom-left .tabmenu li:last-of-type a {
     padding-right: 12px;
 }
 
