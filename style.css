@@ -279,15 +279,17 @@ button:active, .sidebox.submit a:active {
     margin-left: -1px;
 }
 
-#header-img.default-header {
-    height: 30px;
-    width: 30px;
-    background-image: url(%%alien%%);
-    background-position: 0;
+#header-img.default-header, #header-img-a {
+    width: 35px;
     position: absolute;
-    top: 45px;
     left: 15px;
     margin: 0;
+    overflow: hidden;
+    margin-top: 4px;
+}
+
+#header-img-a {
+    margin-top: 2px;
 }
 
 .pagename {
