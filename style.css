@@ -660,8 +660,12 @@ ul.tabmenu.formtab li:last-child  a {
 
 .link.linkflair .thumbnail {
     position: relative;
-    height: 55px;
-    overflow: visible;
+    height: 48px;
+    width: 48px;
+    margin: 20px 16px 10px 11px;
+    border-radius: 50%;
+    background-position: 0;
+    background-image: none;
 }
 
 .link .thumbnail {
@@ -681,6 +685,83 @@ ul.tabmenu.formtab li:last-child  a {
 }
 
 .link.linkflair-officialnews > .thumbnail {
-    background-image: url(%%news%%);
-    background-position: 11px 1px;
+    background-color: #019fde;
+    background-image: url(%%info%%);
+}
+
+.link.linkflair-relnews .linkflairlabel {
+    color: #1375B6;
+}
+
+.link.linkflair-relnews > .thumbnail {
+    background-color: #858585;
+    background-image: url(%%info%%);
+}
+
+.link.linkflair-devnews .linkflairlabel {
+    color: #db4c44;
+}
+
+.link.linkflair-devnews > .thumbnail {
+    background-color: #db4c44;
+    background-image: url(%%dev%%);
+    background-position: center;
+    background-size: 32px;
+}
+
+.link.linkflair-req .linkflairlabel {
+    color: #000;
+}
+
+.link.linkflair-req > .thumbnail {
+    background-color: #858585;
+}
+
+.link.linkflair-req > .thumbnail::after {
+    content: "REQ";
+    width: 48px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    font: initial;
+}
+
+.link.linkflair-support .linkflairlabel {
+    color: #000;
+}
+
+.link.linkflair-support > .thumbnail {
+    background-color: #858585;
+}
+
+.link.linkflair-support > .thumbnail::after {
+    content: "HELP";
+    width: 48px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    font: initial;
+}
+
+.link.linkflair-modding .linkflairlabel {
+    color: #000;
+}
+
+.link.linkflair-modding > .thumbnail {
+    background-color: #858585;
+}
+
+.link.linkflair-modding > .thumbnail::after {
+    content: "MOD";
+    width: 48px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    font: initial;
 }
