@@ -1,7 +1,7 @@
 /* Site wide styling */
 
 Body * {
-    font-family: 'Open Sans', 'Droid Sans', arial !important;
+    font-family: "Open Sans", "Droid Sans", Sans-serif !important;
 }
 
 a {
@@ -725,7 +725,8 @@ ul.tabmenu.formtab li:last-child  a {
     left: 0;
     transform: translateY(-50%);
     color: #fff;
-    font: initial;
+    font-size: 16px;
+	font-family: "Open Sans", "Droid Sans", Sans-serif;
 }
 
 .link.linkflair-support .linkflairlabel {
@@ -744,7 +745,8 @@ ul.tabmenu.formtab li:last-child  a {
     left: 0;
     transform: translateY(-50%);
     color: #fff;
-    font: initial;
+    font-size: 16px;
+	font-family: "Open Sans", "Droid Sans", Sans-serif;
 }
 
 .link.linkflair-modding .linkflairlabel {
@@ -763,5 +765,6 @@ ul.tabmenu.formtab li:last-child  a {
     left: 0;
     transform: translateY(-50%);
     color: #fff;
-    font: initial;
+    font-size: 16px;
+	font-family: "Open Sans", "Droid Sans", Sans-serif;
 }
