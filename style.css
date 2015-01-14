@@ -735,18 +735,7 @@ ul.tabmenu.formtab li:last-child  a {
 
 .link.linkflair-support > .thumbnail {
     background-color: #858585;
-}
-
-.link.linkflair-support > .thumbnail::after {
-    content: "HELP";
-    width: 48px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    color: #fff;
-    font-size: 16px;
-	font-family: "Open Sans", "Droid Sans", Sans-serif;
+    background-image: url(%%help%%);
 }
 
 .link.linkflair-modding .linkflairlabel {
