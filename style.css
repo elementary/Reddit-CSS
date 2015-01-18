@@ -659,7 +659,7 @@ ul.tabmenu.formtab li:last-child  a {
 }
     
 
-.link.self .thumbnail, .link .thumbnail.default {
+.link .thumbnail {
     position: relative;
     height: 48px;
     width: 48px;
@@ -671,15 +671,16 @@ ul.tabmenu.formtab li:last-child  a {
 }
 
 .link:not(.self) .thumbnail:not(.default) {
-    margin-top: 21px;
     height: 55px;
-    text-align: center;
-    border-radius: 50%;
+    width: 55px;
 }
 
 .link .thumbnail > img {
-    height: 55px;
+    height: 100%;
     width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .link .thumbnail.default, .link .thumbnail.self {
