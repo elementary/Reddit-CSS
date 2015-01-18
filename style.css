@@ -316,16 +316,16 @@ button:active, .sidebox.submit a:active {
 
 .pagename a::after {
     content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 32px;
     height: 32px;
     padding: 7px 15px;
     background: url(%%logo%%) center no-repeat;
-	background-size: 32px;
+    background-size: 32px;
     visibility: visible;
-	transition: opacity 200ms ease-out;
+    transition: opacity 200ms ease-out;
 }
 
 .pagename a:hover::after {
@@ -428,8 +428,8 @@ button:active, .sidebox.submit a:active {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #47A8E9;
-	color: #fff;
-	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
 }
 
 .sidebox.submit.submit-text .morelink {
@@ -453,29 +453,29 @@ button:active, .sidebox.submit a:active {
 }
 
 .titlebox .subscribers, .titlebox .users-online {
-	font-size: 11px;
-	vertical-align: middle;
+    font-size: 11px;
+    vertical-align: middle;
 }
 
 .titlebox .subscribers {
-	font-size: 14px;
+    font-size: 14px;
 }
 
 .titlebox .users-online {
-	display: inline;
+    display: inline;
 }
 
 .titlebox .users-online .word {
-	display: none;
+    display: none;
 }
 
 .titlebox .users-online .number::before {
-	content: "(";
-	margin-left: 5px;
+    content: "(";
+    margin-left: 5px;
 }
 
 .titlebox .users-online .number::after {
-	content: " here)";
+    content: " here)";
 }
 
 .fancy-toggle-button .add, .fancy-toggle-button .remove, .RESshortcutside, .RESDashboardToggle {
@@ -693,7 +693,7 @@ ul.tabmenu.formtab li:last-child  a {
 .link.linkflair-officialnews > .thumbnail {
     background-color: #019fde;
     background-image: url(%%info%%);
-	background-size: 48px;
+    background-size: 48px;
 }
 
 .link.linkflair-relnews .linkflairlabel {
@@ -703,7 +703,7 @@ ul.tabmenu.formtab li:last-child  a {
 .link.linkflair-relnews > .thumbnail {
     background-color: #009688;
     background-image: url(%%info%%);
-	background-size: 48px;
+    background-size: 48px;
 }
 
 .link.linkflair-devnews .linkflairlabel {
@@ -724,7 +724,7 @@ ul.tabmenu.formtab li:last-child  a {
 .link.linkflair-req > .thumbnail {
     background-color: #E65100;
     background-image: url(%%req%%);
-	background-size: 48px;
+    background-size: 48px;
 }
 
 .link.linkflair-support .linkflairlabel {
@@ -734,7 +734,7 @@ ul.tabmenu.formtab li:last-child  a {
 .link.linkflair-support > .thumbnail {
     background-color: #4CAF50;
     background-image: url(%%help%%);
-	background-size: 48px;
+    background-size: 48px;
 }
 
 .link.linkflair-modding .linkflairlabel {
