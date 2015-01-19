@@ -14,26 +14,8 @@ a:hover {
     transition: color 200ms ease-out;
 }
 
-abbr[title] {
-    cursor: help;
-    border-bottom: 1px dotted #444;
-}
-
-b,strong {
-    font-weight: 700 !important;
-}
-
-em,i {
-    font-style: italic !important;
-}
-
 s,strike,del {
     opacity: 0.75;
-}
-
-ins {
-    background-color: #f2f249;
-    text-decoration: none;
 }
 
 code {
@@ -56,43 +38,6 @@ pre {
     word-break: break-all;
     margin: 20px 0;
     padding: 10px;
-}
-
-sup,sub {
-    font-size: 75%;
-}
-
-sup {
-    vertical-align: super;
-}
-
-sub {
-    vertical-align: sub;
-}
-
-blockquote {
-    border-left: 4px double #bfbfbf;
-    margin: 20px 0;
-    padding: 5px 5px 10px 20px;
-}
-
-blockquote p {
-    font-family: "Droid Serif", serif;
-    font-size: 20px;
-    font-style: italic;
-    line-height: 2;
-    margin: 0;
-}
-
-blockquote p i,blockquote p em {
-    font-style: normal;
-}
-
-blockquote small {
-    color: #999;
-    display: block;
-    font-size: 85%;
-    line-height: 2;
 }
 
 input:focus,textarea:focus {
