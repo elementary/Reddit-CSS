@@ -183,6 +183,26 @@ button:active, .sidebox.submit a:active {
     margin: 21px 7px 5.5px 0;
 }
 
+.arrow {
+    background-image: url(%%arrows%%) !important;
+}
+
+.arrow.up {
+    background-position: 0 0;
+}
+
+.arrow.upmod {
+    background-position: -15px 0;
+}
+
+.arrow.down {
+    background-position: -30px 0;
+}
+
+.arrow.downmod {
+    background-position: -45px 0;
+}
+
 /* Reddit links (header-bottom-right) */
 
 #header-bottom-right {
