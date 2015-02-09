@@ -635,8 +635,9 @@ ul.tabmenu.formtab li:last-child  a {
 }
 
 .link:not(.self) .thumbnail:not(.default) {
-    height: 55px;
-    width: 55px;
+    height: 52px;
+    width: 52px;
+    border: 1px solid;
 }
 
 .link .thumbnail > img {
@@ -649,6 +650,7 @@ ul.tabmenu.formtab li:last-child  a {
 
 .link .thumbnail.default, .link .thumbnail.self {
     background-color: #9E9E9E;
+    border-color: #9E9E9E;
 }
 
 .link.linkflair-officialnews .linkflairlabel {
@@ -657,6 +659,7 @@ ul.tabmenu.formtab li:last-child  a {
 
 .link.linkflair-officialnews > .thumbnail {
     background-color: #019fde;
+    border-color: #019fde;
     background-image: url(%%info%%);
     background-size: 48px;
 }
