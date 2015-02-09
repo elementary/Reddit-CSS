@@ -667,6 +667,7 @@ ul.tabmenu.formtab li:last-child  a {
 
 .link.linkflair-relnews > .thumbnail {
     background-color: #009688;
+    border-color: #009688;
     background-image: url(%%info%%);
     background-size: 48px;
 }
@@ -677,6 +678,7 @@ ul.tabmenu.formtab li:last-child  a {
 
 .link.linkflair-devnews > .thumbnail {
     background-color: #E53935;
+    border-color: #E53935;
     background-image: url(%%dev%%);
     background-position: center;
     background-size: 32px;
@@ -688,6 +690,7 @@ ul.tabmenu.formtab li:last-child  a {
 
 .link.linkflair-req > .thumbnail {
     background-color: #E65100;
+    border-color: #E65100;
     background-image: url(%%req%%);
     background-size: 48px;
 }
@@ -698,6 +701,7 @@ ul.tabmenu.formtab li:last-child  a {
 
 .link.linkflair-support > .thumbnail {
     background-color: #4CAF50;
+    border-color: #4CAF50;
     background-image: url(%%help%%);
     background-size: 48px;
 }
@@ -708,6 +712,7 @@ ul.tabmenu.formtab li:last-child  a {
 
 .link.linkflair-modding > .thumbnail {
     background-color: #9C27B0;
+    border-color: #9C27B0;
 }
 
 .link.linkflair-modding > .thumbnail::after {
