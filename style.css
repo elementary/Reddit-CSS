@@ -629,12 +629,8 @@ ul.tabmenu.formtab li:last-child  a {
     border: none;
 }
 
-.linkflairlabel::before {
-    content: "[ "
-}
-
 .linkflairlabel::after {
-    content: " ]"
+    content: ": ";
 }
     
 
