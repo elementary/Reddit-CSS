@@ -748,6 +748,17 @@ ul.tabmenu.formtab li:last-child  a {
     font-family: "Open Sans", "Droid Sans", Helvetica, Arial, Sans-serif
 }
 
+.link.linkflair-discussion .linkflairlabel {
+    color: #019fde;
+}
+
+.link.linkflair-discussion > .thumbnail {
+    background-color: #019fde;
+    border-color: #019fde;
+    background-image: url(%%help%%);
+    background-size: 48px;
+}
+
 /* "No Participation"-Mode, aka "Read Only"-Mode
  * by /u/KortoloB
  * /r/NoParticipation
