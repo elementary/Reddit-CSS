@@ -387,7 +387,7 @@ button:active, .sidebox.submit a:active {
     margin-top: 0;
 }
 
-.sidebox.submit.submit-text a {
+.sidebox.submit.submit-text a, .submit-page button[name="submit"] {
     cursor: pointer;
     display: inline-block;
     font-size: 16px;
@@ -511,11 +511,11 @@ button:active, .sidebox.submit a:active {
     width: 600px;
 }
 
-
 .submit.content input[type="text"],
 .submit.content input[type="url"],
 .submit.content textarea {
-    width: 584px
+    width: 600px;
+    box-sizing: border-box;
 }
 
 .submit.content .roundfield {
@@ -567,6 +567,13 @@ ul.tabmenu.formtab li:last-child  a {
 .roundfield, .content.submit .info-notice, .formtabs-content {
     background: none;
     border: none;
+}
+
+.submit-page .submit.content #reddit-field.roundfield, .submit-page .submit.content .formtabs-content .spacer:last-child .title, .submit-page .submit.content .roundfield.info-notice::before {    display: none;
+}
+
+.submit-page .submit.content .formtabs-content .spacer:last-child .roundfield-content, .submit-page .submit.content .roundfield.info-notice {
+    text-align: center;
 }
 
 /* Stylesheet editing page */
