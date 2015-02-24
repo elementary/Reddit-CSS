@@ -569,9 +569,9 @@ ul.tabmenu.formtab li:last-child  a {
     border: none;
 }
 
-.submit-page .submit.content #reddit-field.roundfield, .submit-page .submit.content .formtabs-content .spacer:last-child .title, .submit-page .submit.content .roundfield.info-notice::before {    display: none;
+.submit-page .submit.content #reddit-field.roundfield, .submit-page .submit.content .formtabs-content .spacer:last-child .title, .submit-page .submit.content .roundfield.info-notice::before, .submit-page .submit.content .submit_text.roundfield.enabled > h1 { 
+    display: none;
 }
-
 .submit-page .submit.content .formtabs-content .spacer:last-child .roundfield-content, .submit-page .submit.content .roundfield.info-notice {
     text-align: center;
 }
