@@ -339,7 +339,7 @@ button:active, .sidebox.submit a:active {
 
 .link .expando-button {
     height: 10px;
-    width: 20px;
+    width: 16px;
 }
 
 .link .expando-button.collapsed {
