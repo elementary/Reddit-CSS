@@ -118,10 +118,14 @@ button:active, .sidebox.submit a:active {
                 0 1px 0 1px rgba(255, 255, 255, 0.30);
 }
 
-/* Main Content */
+/* Nav */
 
 #sr-header-area {
-    background-image: linear-gradient(#fff, #f3f3f3);
+    border: none;
+}
+
+.sr-list {
+    opacity: 0.8;
 }
 
 #header {
@@ -130,56 +134,55 @@ button:active, .sidebox.submit a:active {
     text-align: center;
 }
 
-.content[role="main"] {
-    margin-left: 0;
-    position: relative;
-    width: calc(100% - 342px);
-    padding: 0 16px;
-}
+/* Main Content */
 
-.content[role="main"]::before {
-    background: linear-gradient(to right, #fff 0%, #C9C9C9 5%, #C9C9C9 50%, #C9C9C9 95%, #fff 100%);
-    height: 1px;
-    width: calc(100% - 32px);
-    content: "";
-    position: absolute;
-    left: 16px;
-    top: 0;
+.content[role="main"] {
+    margin: 6px;
+    width: calc(100% - 320px);
 }
 
 .content[role="main"] h1 {
     text-align: center;
 }
 
+.midcol {
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
 .link {
     position: relative;
-    margin: 0;
-    padding: 1px 0 0 0;
+    margin-bottom: 16px;
 }
 
-.link::after {
-    content: " ";
-    position: absolute; 
-    height: 1px;
-    width: 100%;
-    background: linear-gradient(to right, #fff 0%, #f2f2f2 5%, #f2f2f2 50%, #f2f2f2 95%, #fff 100%);
+.link.stickied {
+    border: 1px solid #FBC02D;
+    border-radius: 3px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: #FFF9C4;
 }
 
-.link .entry {
-    padding: 16px 0;
+.link.thing.stickied a.title {
+    color: rgba(0, 0, 0, 0.65);
 }
 
-.link .title {
+.link .entry:nth-child(5) {
+    margin-left: 45px;
+}
+
+.link .entry .buttons li a {
+    font-weight: 300;
+}
+
+.link .title,
+.link .title:visited{
     font-size: 18px;
-    color: #08c;
+    color: #333;
 }
 
 .link.self .domain {
     display: none;
-}
-
-.midcol {
-    margin: 21px 7px 5.5px 0;
 }
 
 .arrow {
@@ -202,10 +205,12 @@ button:active, .sidebox.submit a:active {
     background-position: -45px 0;
 }
 
-.link .usertext-body .md { /* similar to textarea */
-    border-radius: 2.5px;
-    border-color: rgba(0, 0, 0, 0.22);
-    padding: 6px 8px !important;
+.link .usertext-body .md {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    font-size: 12px;
+    opacity: 0.9;
 }
 
 /* Reddit links (header-bottom-right) */
@@ -230,9 +235,6 @@ button:active, .sidebox.submit a:active {
 
 #header-bottom-left {
     display: inline-block;
-    background: url(%%nav-bg%%) no-repeat 3px -9px;
-    background-size: 100% 110px;
-    padding: 18px 0 28px;
 }
 
 #header-bottom-left::after {
@@ -240,10 +242,6 @@ button:active, .sidebox.submit a:active {
     height: 46.4px;
     width: 3px;
     position: absolute;
-    border: 1px solid #bbb8b7;
-    border-radius: 0 3px 3px 0;
-    border-left: none;
-    background: linear-gradient(#fff,#f5f5f5);
     margin-left: -1px;
 }
 
@@ -272,14 +270,9 @@ button:active, .sidebox.submit a:active {
 .pagename a {
     position: relative;
     display: inline-block;
-    border-radius: 3px 0 0 3px;
-    border: 1px solid #bbb8b7;
-    border-right: none;
-    border-top-color: #c7c2c2;
     text-indent: -99999px;
     width: 32px;
     height: 32px;
-    background: linear-gradient(#fff,#f5f5f5);
     visibility: visible;
     padding: 7px 15px;
 }
@@ -303,21 +296,8 @@ button:active, .sidebox.submit a:active {
 }
 
 #header-bottom-left .tabmenu {
-    background: linear-gradient(#fff,#f5f5f5);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
-                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
-                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
-                0 1px 0 1px rgba(255, 255, 255, 0.15);
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 1px solid #bbb8b7;
-    border-left: none;
-    border-right: none;
-    border-top-color: #c7c2c2;
     height: 48px;
     font-size: 16px;
-    margin-top: 0;
 }
 
 #header-bottom-left .tabmenu li {
@@ -327,7 +307,6 @@ button:active, .sidebox.submit a:active {
     margin-left: 0;
     font-weight: normal;
     height: 46px;
-    border-right: 1px solid #e6e6e5;
 }
 
 #header-bottom-left .tabmenu li a {
@@ -340,9 +319,9 @@ button:active, .sidebox.submit a:active {
 }
 
 #header-bottom-left .tabmenu li.selected {
-    background-color: #f2f2f2;
+    background-color: #e0e0e0;
     border: none;
-    border-right: 1px solid #e6e6e5;
+    border-radius: 3px;
 }
 
 #header-bottom-left .tabmenu li.selected a {
@@ -353,14 +332,6 @@ button:active, .sidebox.submit a:active {
 
 #header-bottom-left .tabmenu li a:hover {
     color: #000;
-}
-
-#header-bottom-left .tabmenu li:first-of-type {
-    border-left: 1px solid #e6e6e5;
-}
-
-#header-bottom-left .tabmenu li:last-of-type {
-    border-right: 0;
 }
 
 #header-bottom-left .tabmenu li:last-of-type a {
@@ -628,47 +599,31 @@ ul.tabmenu.formtab li:last-child  a {
 /* Link Flair */
 
 .linkflairlabel {
-    margin-top: -2px;
-    font-size: 14px;
-    line-height: 24px;
-    vertical-align: middle;
     background: none;
     border: none;
 }
 
-.linkflairlabel::after {
-    content: ": ";
+.title .linkflairlabel {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 14px;
+    max-width: inherit;
+    padding: 0;
 }
-    
 
 .link .thumbnail {
-    position: relative;
-    height: 48px;
-    width: 48px;
-    margin: 20px 16px 10px 11px;
-    border-radius: 50%;
-    background-position: 0;
-    background-image: none;
-    text-align: center;
+    float: none;
+    margin: 0;
+    overflow: hidden;
 }
 
-.link:not(.self) .thumbnail:not(.default) {
-    height: 52px;
-    width: 52px;
-    border: 1px solid;
-}
-
-.link .thumbnail > img {
+.link a img {
+    border-radius: 3px;
     height: 100%;
+    margin-bottom: 6px;
     width: auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.link .thumbnail.default, .link .thumbnail.self {
-    background-color: #9E9E9E;
-    border-color: #9E9E9E;
 }
 
 .link.linkflair-officialnews .linkflairlabel {
