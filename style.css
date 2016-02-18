@@ -209,7 +209,6 @@ button:active, .sidebox.submit a:active {
     border: none;
     padding: 0;
     background-color: transparent;
-    font-size: 12px;
     opacity: 0.9;
 }
 
