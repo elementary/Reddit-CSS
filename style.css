@@ -628,7 +628,12 @@ ul.tabmenu.formtab li:last-child  a {
     border-radius: 3px;
     height: 100%;
     margin-bottom: 6px;
+    transition: all 200ms ease-in-out;
     width: auto;
+}
+
+.link a img:hover {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .link.linkflair-officialnews .linkflairlabel {
