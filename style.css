@@ -124,19 +124,19 @@ button:active, .sidebox.submit a:active {
     background-color: transparent;
     border: none;
     height: 0;
+    line-height: 51px;
 }
 
 #sr-header-area .dropdown.srdrop {
     margin-left: 52px;
-    margin-top: 10px;
 }
 
 #sr-header-area .dropdown.srdrop .selected {
     background-image: url(%%srdrop%%);
-    background-size: contain;
+    background-size: 80px;
+    background-position-x: 0;
     color: transparent;
     margin: 0;
-    padding: 6px;
 }
 
 .sr-list {
