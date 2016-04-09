@@ -153,6 +153,7 @@ button:active, .sidebox.submit a:active {
     text-align: center;
     box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
     position: fixed;
+    height: 51px;
     width: 100%;
     top: 0;
 }
@@ -262,6 +263,7 @@ button:active, .sidebox.submit a:active {
 
 #header-bottom-left {
     display: inline-block;
+    margin-left: -32px;
 }
 
 #header-bottom-left::after {
@@ -287,65 +289,37 @@ button:active, .sidebox.submit a:active {
     margin-top: 2px;
 }
 
-.pagename {
-    display: inline-block;
-    position: relative;
-    height: 48px;
-    font-size: 0;
-    margin-right: 0;
-    visibility: hidden;
-}
-
+.pagename,
 .pagename a {
-    position: relative;
+    color: #666;
+    text-transform: lowercase;
+    font-weight: initial;
+    font-variant: normal;
+    line-height: 51px;
+}
+
+.pagename a:before {
+    content: "r/";
+    color: #aaa;
     display: inline-block;
-    text-indent: -99999px;
-    width: 32px;
-    height: 32px;
-    visibility: visible;
-    padding: 7px 15px;
-}
-
-.pagename a::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 32px;
-    height: 32px;
-    padding: 7px 15px;
-    background: url(%%logo%%) center no-repeat;
+    background-image: url(%%logomark%%);
     background-size: 32px;
-    visibility: visible;
-    transition: opacity 200ms ease-out;
-}
-
-.pagename a:hover::after {
-    opacity: 0.6;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    padding-left: 42px;
 }
 
 #header-bottom-left .tabmenu {
-    height: 48px;
-    font-size: 16px;
-    margin-top: 3px;
-}
-
-#header-bottom-left .tabmenu li {
-    display: inline-block;
-    list-style: none;
-    margin-right: 0;
-    margin-left: 0;
-    font-weight: normal;
-    height: 46px;
+    height: 51px;
+    font-size: 14px;
+    margin: 0;
 }
 
 #header-bottom-left .tabmenu li a {
-    display: inline-block;
     color: #636363;
     background: none;
-    height: 100%;
-    line-height: 45px;
-    padding: 0 15px;
+    font-weight: normal;
+    line-height: 51px;
 }
 
 #header-bottom-left .tabmenu li.selected {
