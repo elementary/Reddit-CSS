@@ -195,16 +195,6 @@ button:active, .sidebox.submit a:active {
     margin-left: 45px;
 }
 
-.link .entry .buttons li a {
-    color: #333;
-    font-weight: 300;
-    opacity: 0.8;
-}
-
-.link .entry .buttons li a:hover {
-    opacity: 0.9;
-}
-
 .link .title,
 .link .title:visited{
     font-size: 20px;
