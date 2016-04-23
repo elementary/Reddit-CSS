@@ -18,25 +18,25 @@ s,strike,del {
     opacity: 0.75;
 }
 
-code {
-    background: #f2f7fa;
-    border-radius: 2.5px;
-    color: #1486cc;
-    font-family: Inconsolata, monospace !important;
+code, pre, kbd {
+    border: 1px solid lightgrey;
+    border-radius: 3px !important;
+    font-family: "Roboto Mono", monospace !important;
+    font-size: 90%;
     padding: 2px 4px;
+    text-align: justify;
+    white-space: nowrap;
 }
 
 pre {
-    background: #fcfcfc;
-    border: 1px solid #f2f2f2;
-    border-radius: 2.5px;
-    color: #707070;
+    border: none !important;
+    background-color: #002b36 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #839496;
     display: block;
-    font-family: Inconsolata, monospace !important;
     line-height: 1.5;
-    word-break: break-all;
-    margin: 20px 0;
-    padding: 10px;
+    margin: 20px 0 !important;
+    padding: 0.5em !important;
 }
 
 input:focus,textarea:focus {
