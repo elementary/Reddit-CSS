@@ -638,7 +638,6 @@ ul.tabmenu.formtab li:last-child  a {
 
 .link a img {
     border-radius: 3px;
-    height: 100%;
     margin-bottom: 6px;
     transition: all 200ms ease-in-out;
     width: auto;
